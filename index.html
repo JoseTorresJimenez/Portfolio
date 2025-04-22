@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi CV y Portafolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header minimalista -->
+    <header>
+      <div class="header-decor">
+        <h1>José Torres Jiménez</h1>
+        <p>Desarrollador Web | Ingeniero en Sistemas de Información</p>
+        <nav>
+          <a href="#presentacion">Presentación</a>
+          <a href="#educacion">Educación</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#portafolio">Portafolio</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Sección Sobre mí -->
+      <section id="presentacion">
+        <h2>Sobre mí</h2>
+        <p>
+          Mi nombre es José Torres Jiménez, tengo 22 años. Actualmente soy un estudiante de cuarto año en la carrera de Ingenieria en sistemas de informacion. Habiendo obtenido gran experiencia en el desarrolo de aplicaciones web y software en el proceso, ademas de 6 años de experiencia como tecnico independiente.
+        </p>
+      </section>
+
+      <!-- Educación -->
+      <section id="educacion">
+        <h2>Educación</h2>
+        <ul>
+          <li>Técnico medio en Redes — Colegio Técnico de Nicoya</li>
+          <li>Estudiante de Ingeniería en Sistemas de Información — Universidad Nacional de Costa Rica</li>
+        </ul>
+      </section>
+
+      <!-- Habilidades divididas en cuadros separados -->
+      <section id="habilidades">
+        <div class="skill-block">
+          <h3>Habilidades Blandas</h3>
+          <ul class="lista-habilidades">
+            <li>Proactividad</li>
+            <li>Autodidacta</li>
+            <li>Trabajo en equipo</li>
+            <li>Comunicación y liderazgo</li>
+          </ul>
+        </div>
+
+        <div class="skill-block">
+          <h3>Herramientas</h3>
+          <ul class="lista-destrezas">
+            <li>GitHub</li>
+            <li>React</li>
+            <li>JavaScript (ES6+)</li>
+            <li>HTML5 &amp; CSS3</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>Nest</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
+
+        <div class="skill-block">
+          <h3>Idiomas</h3>
+          <ul>
+            <li>Español: Nativo</li>
+            <li>Inglés: Intermedio</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Descarga de CV -->
+      <section id="descarga-cv">
+        <h2>Descarga mi CV</h2>
+        <p>
+          Descarga mi Currículum Vitae completo
+          <a href="https://drive.google.com/file/d/1aL33qpQb4UfaTh43QXFNBs-EzQgRV1tQ/view?usp=sharing" target="_blank">aquí</a>
+        </p>
+      </section>
+
+      <!-- Portafolio de Proyectos -->
+      <section id="portafolio">
+        <h2>Portafolio</h2>
+        <div class="grid-proyectos">
+          <!-- Proyecto 1 -->
+          <article class="tarjeta-proyecto">
+            <img src="assets/activos-ctp.png" alt="Sistema de gestión de activos CTP Hojancha">
+            <h3>Sistema de gestión de activos CTP Hojancha</h3>
+            <p>
+              Este proyecto tiene la capacidad de gestionar los activos y disponibilidad desde una cuenta administradora, además de gestionar inventarios asignados a cada docente de la institución y préstamos de dichos activos.
+            </p>
+            <div class="project-links">
+              <a href="https://frontend-ctp-s3ev.vercel.app/" target="_blank">Ver proyecto</a>
+              <a href="https://github.com/thestward192/Frontend_CTP" target="_blank">GitHub</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="tarjeta-proyecto">
+            <img src="assets/teatro.png" alt="Gestión de asientos de teatro">
+            <h3>Gestión de asientos de teatro</h3>
+            <p>
+              Este proyecto permite hacer reservaciones en los asientos de un teatro, iniciando por los asientos más centrados, y evita reservar más asientos de los disponibles en una misma fila.
+            </p>
+            <div class="project-links">
+              <a href="https://teatro-blush.vercel.app/" target="_blank">Ver proyecto</a>
+              <a href="https://github.com/JoseTorresJimenez/teatro" target="_blank">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Formulario de Contacto -->
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="form-contacto" novalidate>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 José Torres Jiménez</p>
+    </footer>
+  </div>
+
+  <!-- Script que genera el toggle y las interacciones -->
+  <script src="script.js"></script>
+</body>
+</html>
